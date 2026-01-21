@@ -1,0 +1,13 @@
+.lista-coches {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.coche-card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    width: 220px;
+}

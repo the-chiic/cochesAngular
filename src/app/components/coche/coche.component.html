@@ -1,6 +1,8 @@
 <h2>Lista de Coches</h2>
-<ul>
-  <li *ngFor="let coche of coches">
-    {{coche.marca}} - {{coche.modelo}} ({{coche.ano}})
-  </li>
-</ul>
+<div class="lista-coches">
+  <div *ngFor="let coche of coches" class="coche-card">
+    <img [src]="coche.imagen" alt="{{coche.marca}} {{coche.modelo}}" width="200">
+    <h3>{{ coche.marca }} {{ coche.modelo }}</h3>
+    <p>Año: {{ coche.ano }}</p>
+  </div>
+</div>
