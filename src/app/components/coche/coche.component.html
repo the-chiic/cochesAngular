@@ -4,5 +4,14 @@
     <img [src]="coche.imagen" alt="{{coche.marca}} {{coche.modelo}}" width="200">
     <h3>{{ coche.marca }} {{ coche.modelo }}</h3>
     <p>Año: {{ coche.ano }}</p>
+    <button (click)="editCoche(coche)">Editar</button>
+    <button (click)="deleteCoche(coche.id)">Borrar</button>
   </div>
 </div>
+
+<h2>{{ editMode ? 'Editar Coche' : 'Formulario' }}</h2>
+<input type="text" [(ngModel)]="marca" placeholder="Seat">
+<input type="text" [(ngModel)]="modelo" placeholder="Panda">
+<input type="number" [(ngModel)]="ano" placeholder="2005">
+<input type="text" [(ngModel)]="imagen" placeholder="ruta">
+<button (click)="addCoche()">{{ editMode ? 'Guardar' : 'Enviar' }}</button>
