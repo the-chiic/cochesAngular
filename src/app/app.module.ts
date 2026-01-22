@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
-import { AppRoutingModule } from './coche/services/app-routing.module';
-import { AppComponent } from './app.component';
-import { CocheComponent } from './components/coche/coche.component';
 import { FormsModule } from '@angular/forms';
+
+import { AppRoutingModule } from './app-routing.module';
+import { AppComponent } from './app.component';
+import { CocheComponent } from './coche/components/coche.component';
 
 @NgModule({
   declarations: [
